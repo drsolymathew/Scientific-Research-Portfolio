@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%" aria-label="Dr. Soly Mathew Minimalist Scandinavian Logo">
+  <defs>
+    <linearGradient id="scandiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091222"/>
+      <stop offset="100%" stop-color="#030710"/>
+    </linearGradient>
+    <linearGradient id="glowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Midnight Container -->
+  <rect x="4" y="4" width="112" height="112" rx="26" fill="url(#scandiBg)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5"/>
+
+  <!-- Elegant Typographic S & M Intertwined -->
+  <!-- Serif-inspired S path -->
+  <path d="M 46 40 C 38 40, 32 45, 32 52 C 32 64, 52 62, 52 74 C 52 82, 44 86, 36 84" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="5" 
+        stroke-linecap="round"/>
+
+  <!-- Modern Dynamic M Path intersecting with sensory pulse -->
+  <path d="M 58 84 L 58 40 L 72 62 L 86 40 L 86 84" 
+        fill="none" 
+        stroke="#38bdf8" 
+        stroke-width="4.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+
+  <!-- Sensor Wave Underline -->
+  <path d="M 30 96 C 45 92, 75 100, 90 96" 
+        fill="none" 
+        stroke="url(#glowLine)" 
+        stroke-width="3" 
+        stroke-linecap="round"/>
+
+  <!-- Dielectric Spark Node -->
+  <circle cx="72" cy="62" r="3" fill="#2dd4bf"/>
+</svg>
