@@ -108,7 +108,7 @@
             Among all electrical transduction mechanisms—piezoresistive, piezoelectric, triboelectric, and capacitive—capacitive pressure sensors (CPSs) offer distinct advantages: simple device architecture, minimal temperature drift, negligible static power consumption, and straightforward signal conditioning.
           </p>
           <p>
-            However, traditional flexible capacitive sensors utilizing pristine polydimethylsiloxane (PDMS) suffer from fundamentally poor sensitivity. Pristine PDMS possesses a low relative dielectric permittivity ($\varepsilon_r \approx 2.7$) and high bulk modulus under constraint, requiring substantial compressive stress to produce detectable capacitance changes ($\Delta C / C_0$). While micro-structuring techniques (such as photolithographic pyramids or porous sponges) can improve compliance, they often introduce complex fabrication steps, poor mechanical fatigue life, and pronounced viscoelastic hysteresis during continuous cycling.
+            However, traditional flexible capacitive sensors utilizing pristine polydimethylsiloxane (PDMS) suffer from fundamentally poor sensitivity. Pristine PDMS possesses a low relative dielectric permittivity (<em>&epsilon;</em><sub>r</sub> &approx; 2.7) and high bulk modulus under constraint, requiring substantial compressive stress to produce detectable capacitance changes (&Delta;<em>C</em>/<em>C</em><sub>0</sub>). While micro-structuring techniques (such as photolithographic pyramids or porous sponges) can improve compliance, they often introduce complex fabrication steps, poor mechanical fatigue life, and pronounced viscoelastic hysteresis during continuous cycling.
           </p>
 
           <h2>2. Research Objectives</h2>
@@ -193,7 +193,7 @@
           <figure class="scientific-figure">
             <img src="../assets/images/diagrams/dielectric-curve.svg" alt="Experimental sensitivity graph comparing ternary dielectric nanocomposite to pure PDMS" loading="lazy">
             <figcaption class="figure-caption">
-              <strong>Figure 2.</strong> Relative capacitance change ($\Delta C / C_0$) as a function of applied compressive stress ($P$, in kPa). The ternary composite (CPS-3) exhibits an enhanced sensitivity slope ($S = 0.85\text{ kPa}^{-1}$) across the 0–1.5 kPa regime compared to pristine PDMS.
+              <strong>Figure 2.</strong> Relative capacitance change (&Delta;<em>C</em>/<em>C</em><sub>0</sub>) as a function of applied compressive stress (<em>P</em>, in kPa). The ternary composite (CPS-3) exhibits an enhanced sensitivity slope (<em>S</em> = 0.85 kPa<sup>&minus;1</sup>) across the 0–1.5 kPa regime compared to pristine PDMS.
             </figcaption>
           </figure>
 
@@ -201,12 +201,12 @@
           <ul>
             <li><strong>Sensitivity Enhancement:</strong> Incorporation of 0.5 wt% TiO₂ and 0.5 wt% ZnO boosted the relative capacitance sensitivity by over 4.7-fold compared to pristine PDMS, attributable to Maxwell-Wagner-Sillars interfacial polarization and enhanced local electric displacement.</li>
             <li><strong>Linearity Maintenance:</strong> All fabricated devices maintained an identical linear response domain from 0 to 1.5 kPa, confirming that low-volume ceramic filler additions did not compromise bulk mechanical elasticity.</li>
-            <li><strong>Dynamic Stability:</strong> High-speed step-loading tests revealed instantaneous response times ($\tau_r < 38\text{ ms}$) and recovery times ($\tau_d < 45\text{ ms}$), with negligible drift across 2,000 continuous compression-decompression cycles.</li>
+            <li><strong>Dynamic Stability:</strong> High-speed step-loading tests revealed instantaneous response times (<em>&tau;</em><sub>r</sub> &lt; 38 ms) and recovery times (<em>&tau;</em><sub>d</sub> &lt; 45 ms), with negligible drift across 2,000 continuous compression-decompression cycles.</li>
           </ul>
 
           <h2>6. Scientific Limitations</h2>
           <p>
-            While the low-pressure sensitivity was significantly augmented, the sensor's linear region becomes sub-linear beyond 1.5 kPa due to the mechanical saturation of the thin elastomer dielectric under compressive strain. Furthermore, filler concentrations exceeding 1.0 wt% aggregate into larger clusters, leading to elevated dielectric dissipation ($\tan \delta$) and localized breakdown risk under high voltage fields.
+            While the low-pressure sensitivity was significantly augmented, the sensor's linear region becomes sub-linear beyond 1.5 kPa due to the mechanical saturation of the thin elastomer dielectric under compressive strain. Furthermore, filler concentrations exceeding 1.0 wt% aggregate into larger clusters, leading to elevated dielectric dissipation (tan&nbsp;<em>&delta;</em>) and localized breakdown risk under high voltage fields.
           </p>
 
           <h2>7. Industrial &amp; Collaborative Relevance</h2>
@@ -258,6 +258,20 @@
               <li>Electromechanical compression test setup &amp; data logging.</li>
               <li>First author manuscript preparation &amp; peer-review defense.</li>
             </ul>
+          </div>
+
+          <!-- Digital Research Link -->
+          <div class="card" style="padding: 24px; border: 1px solid var(--color-border-medium); background: #ffffff;">
+            <div style="display: flex; gap: 8px; margin-bottom: 8px;">
+              <span class="badge badge-teal">Scientific Python</span>
+            </div>
+            <h3 style="font-size: 1.05rem; margin-bottom: 8px;">Digital Data Analysis</h3>
+            <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; margin-bottom: 12px;">
+              See how experimental CSV logs from capacitive compression testing are processed using reproducible Python pipelines in the <strong>SensorLab Analytics</strong> project.
+            </p>
+            <a href="../computational/#projects" class="btn btn-outline btn-sm" style="width: 100%; justify-content: center;">
+              View SensorLab Pipeline &rarr;
+            </a>
           </div>
 
         </aside>
