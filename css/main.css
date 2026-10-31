@@ -312,6 +312,42 @@ code, kbd, samp, pre {
   border-width: 0;
 }
 
+/* ==========================================================================
+   Simple Page Fade Transition
+   ========================================================================== */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: 150ms ease-out both pageFadeOut;
+}
+
+::view-transition-new(root) {
+  animation: 200ms ease-in both pageFadeIn;
+}
+
+@keyframes pageFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes pageFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  main {
+    animation: pageFadeIn 0.25s ease-out;
+    transition: opacity 0.15s ease-out;
+  }
+
+  body.page-is-leaving main {
+    opacity: 0;
+  }
+}
+
 /* Motion Preferences */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

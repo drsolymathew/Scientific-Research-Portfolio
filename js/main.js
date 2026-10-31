@@ -265,10 +265,76 @@
     document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
   }
 
+  // 8. Smooth Cross-Page Navigation Transitions
+  function initPageTransitions() {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
+    }
+
+    // Clear leaving state if restored via browser back/forward cache (bfcache)
+    window.addEventListener('pageshow', () => {
+      document.body.classList.remove('page-is-leaving');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) {
+        return;
+      }
+
+      const link = e.target.closest('a');
+      if (!link) return;
+
+      const rawHref = link.getAttribute('href');
+      if (!rawHref) return;
+
+      // Ignore anchor links, new tabs, downloads, protocols
+      if (
+        rawHref.startsWith('#') ||
+        link.target === '_blank' ||
+        link.hasAttribute('download') ||
+        rawHref.startsWith('mailto:') ||
+        rawHref.startsWith('tel:') ||
+        rawHref.startsWith('javascript:')
+      ) {
+        return;
+      }
+
+      let dest;
+      try {
+        dest = new URL(link.href, window.location.href);
+      } catch (err) {
+        return;
+      }
+
+      // Ignore external domains
+      if (dest.origin !== window.location.origin) {
+        return;
+      }
+
+      // Ignore if staying on the same page with an anchor
+      if (dest.pathname === window.location.pathname && dest.search === window.location.search && dest.hash) {
+        return;
+      }
+
+      // Trigger simple smooth exit transition
+      e.preventDefault();
+      document.body.classList.add('page-is-leaving');
+
+      setTimeout(() => {
+        window.location.href = dest.href;
+      }, 120);
+    });
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initScrollReveal);
+    document.addEventListener('DOMContentLoaded', () => {
+      initScrollReveal();
+      initPageTransitions();
+    });
   } else {
     initScrollReveal();
+    initPageTransitions();
   }
 
 })();
+
