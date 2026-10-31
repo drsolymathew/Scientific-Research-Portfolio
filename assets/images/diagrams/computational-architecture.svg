@@ -1,171 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%" aria-label="From Laboratory Synthesis to Agentic AI: Closed-Loop Materials Discovery Architecture">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 380" width="100%" height="100%" aria-label="AI-Assisted Scientific Computing and Reproducible Research Workflow">
   <defs>
-    <linearGradient id="cardGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0e1a2f"/>
-      <stop offset="100%" stop-color="#070e1b"/>
-    </linearGradient>
-    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="100%" stop-color="#0284c7"/>
-    </linearGradient>
-    <linearGradient id="tealAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2dd4bf"/>
-      <stop offset="100%" stop-color="#0d9488"/>
-    </linearGradient>
-    <linearGradient id="amberAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fbbf24"/>
-      <stop offset="100%" stop-color="#d97706"/>
-    </linearGradient>
-    <filter id="softGlowComp" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.08"/>
+    <filter id="softShadowComp" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.06"/>
     </filter>
+    <linearGradient id="stepGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="stepGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+    <linearGradient id="stepGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="stepGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1a2f"/>
+      <stop offset="100%" stop-color="#08101e"/>
+    </linearGradient>
   </defs>
 
   <!-- Background Canvas -->
-  <rect width="100%" height="100%" fill="#ffffff" rx="14"/>
-  <rect width="100%" height="100%" fill="none" stroke="#e2e8f0" stroke-width="1.5" rx="14"/>
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect width="100%" height="100%" fill="none" stroke="#e2e8f0" stroke-width="1.5" rx="12"/>
 
-  <!-- Section Header -->
-  <text x="50" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#0f172a" letter-spacing="0.5">RESEARCH-TO-SOFTWARE ARCHITECTURE</text>
-  <text x="50" y="64" font-family="'JetBrains Mono', monospace" font-size="11" fill="#0284c7">Closed-Loop Integration: Experimental Transducers → Python Analytics → Scientific ML → Agentic AI</text>
+  <!-- Diagram Title & Subtitle -->
+  <text x="40" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#0f172a" letter-spacing="0.5">SCIENTIFIC COMPUTING &amp; AI-ASSISTED RESEARCH WORKFLOW</text>
+  <text x="40" y="58" font-family="'JetBrains Mono', monospace" font-size="11" fill="#0284c7">Experimental Sensor Testing &#8226; Python Automation &#8226; AI Assistance (Claude/Copilot/Antigravity) &#8226; Verified Results</text>
 
-  <!-- Flow Connector Background Track -->
-  <path d="M 130 180 L 830 180" stroke="#e2e8f0" stroke-width="3" stroke-dasharray="6,4" fill="none"/>
-
-  <!-- STAGE 1: Experimental Lab -->
-  <g transform="translate(50, 95)" filter="url(#softGlowComp)">
-    <rect width="165" height="175" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
-    <rect x="0" y="0" width="165" height="6" rx="3" fill="#64748b"/>
-    <text x="16" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#0f172a">1. Lab Synthesis</text>
-    <text x="16" y="44" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748b">PHYSICAL EXPERIMENT</text>
-    <line x1="16" y1="52" x2="149" y2="52" stroke="#e2e8f0" stroke-width="1"/>
+  <!-- STAGE 1: Experimental Laboratory Physics -->
+  <g transform="translate(40, 85)" filter="url(#softShadowComp)">
+    <rect width="185" height="195" rx="8" fill="url(#stepGrad1)" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect x="0" y="0" width="185" height="4" rx="2" fill="#64748b"/>
+    <text x="14" y="24" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#475569">STAGE 01</text>
+    <text x="14" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#0f172a">Lab Experiments</text>
+    <line x1="14" y1="52" x2="171" y2="52" stroke="#e2e8f0" stroke-width="1"/>
     
-    <text x="16" y="72" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#334155">• PDMS &amp; PVDF matrix</text>
-    <text x="16" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#334155">• TiO₂, ZnO, CB, ZrO₂</text>
-    <text x="16" y="108" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#334155">• Spin-coating (~100µm)</text>
-    <text x="16" y="126" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#334155">• LCR cyclic testing</text>
+    <text x="14" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#334155">&#8226; Nanocomposite synthesis</text>
+    <text x="14" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#334155">&#8226; Spin coating &amp; casting</text>
+    <text x="14" y="114" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#334155">&#8226; LCR meter data logging</text>
+    <text x="14" y="134" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#334155">&#8226; Compression fatigue</text>
     
-    <rect x="14" y="142" width="137" height="22" rx="4" fill="#e2e8f0"/>
-    <text x="82" y="157" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#475569" text-anchor="middle">5 Verified Papers</text>
+    <rect x="14" y="152" width="157" height="28" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="22" y="170" font-family="'JetBrains Mono', monospace" font-size="9" fill="#0f172a">OUTPUT: Raw CSV Data</text>
   </g>
 
   <!-- Arrow 1 to 2 -->
-  <polygon points="228,180 218,175 218,185" fill="#0284c7"/>
+  <line x1="225" y1="182" x2="255" y2="182" stroke="#0284c7" stroke-width="2"/>
+  <polygon points="255,182 247,178 247,186" fill="#0284c7"/>
 
-  <!-- STAGE 2: Scientific Python -->
-  <g transform="translate(235, 95)" filter="url(#softGlowComp)">
-    <rect width="165" height="175" rx="10" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1.5"/>
-    <rect x="0" y="0" width="165" height="6" rx="3" fill="#0284c7"/>
-    <text x="16" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#0369a1">2. Python Analytics</text>
-    <text x="16" y="44" font-family="'JetBrains Mono', monospace" font-size="9" fill="#0284c7">SensorLab Analytics</text>
-    <line x1="16" y1="52" x2="149" y2="52" stroke="#bae6fd" stroke-width="1"/>
+  <!-- STAGE 2: Python & Scientific Computing -->
+  <g transform="translate(260, 85)" filter="url(#softShadowComp)">
+    <rect width="185" height="195" rx="8" fill="url(#stepGrad2)" stroke="#93c5fd" stroke-width="1.5"/>
+    <rect x="0" y="0" width="185" height="4" rx="2" fill="#0284c7"/>
+    <text x="14" y="24" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#0284c7">STAGE 02</text>
+    <text x="14" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#0f172a">Scientific Python</text>
+    <line x1="14" y1="52" x2="171" y2="52" stroke="#bfdbfe" stroke-width="1"/>
     
-    <text x="16" y="72" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#0f172a">• Raw LCR CSV parsing</text>
-    <text x="16" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#0f172a">• Baseline drift filter</text>
-    <text x="16" y="108" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#0f172a">• S = δ(ΔC/C₀)/δP slope</text>
-    <text x="16" y="126" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#0f172a">• Hysteresis quantitation</text>
+    <text x="14" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#1e3a8a">&#8226; NumPy &amp; Pandas ETL</text>
+    <text x="14" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#1e3a8a">&#8226; Polynomial drift filter</text>
+    <text x="14" y="114" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#1e3a8a">&#8226; Sensitivity slope S</text>
+    <text x="14" y="134" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#1e3a8a">&#8226; Hysteresis &amp; kinetics</text>
 
-    <rect x="14" y="142" width="137" height="22" rx="4" fill="#e0f2fe"/>
-    <text x="82" y="157" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#0369a1" text-anchor="middle">In Development</text>
+    <rect x="14" y="152" width="157" height="28" rx="4" fill="#ffffff" stroke="#93c5fd" stroke-width="1"/>
+    <text x="22" y="170" font-family="'JetBrains Mono', monospace" font-size="9" fill="#0369a1">JupyterLab Pipelines</text>
   </g>
 
   <!-- Arrow 2 to 3 -->
-  <polygon points="413,180 403,175 403,185" fill="#0284c7"/>
+  <line x1="445" y1="182" x2="475" y2="182" stroke="#0284c7" stroke-width="2"/>
+  <polygon points="475,182 467,178 467,186" fill="#0284c7"/>
 
-  <!-- STAGE 3: Machine Learning -->
-  <g transform="translate(420, 95)" filter="url(#softGlowComp)">
-    <rect width="165" height="175" rx="10" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5"/>
-    <rect x="0" y="0" width="165" height="6" rx="3" fill="#0d9488"/>
-    <text x="16" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#0f766e">3. Materials ML</text>
-    <text x="16" y="44" font-family="'JetBrains Mono', monospace" font-size="9" fill="#0d9488">NanoPredict AI</text>
-    <line x1="16" y1="52" x2="149" y2="52" stroke="#99f6e4" stroke-width="1"/>
+  <!-- STAGE 3: AI-Assisted Programming -->
+  <g transform="translate(480, 85)" filter="url(#softShadowComp)">
+    <rect width="195" height="195" rx="8" fill="url(#stepGrad3)" stroke="#86efac" stroke-width="1.5"/>
+    <rect x="0" y="0" width="195" height="4" rx="2" fill="#16a34a"/>
+    <text x="14" y="24" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#15803d">STAGE 03</text>
+    <text x="14" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#0f172a">AI-Assisted Coding</text>
+    <line x1="14" y1="52" x2="181" y2="52" stroke="#bbf7d0" stroke-width="1"/>
     
-    <text x="16" y="72" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#0f172a">• Permittivity (ε_eff) pred.</text>
-    <text x="16" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#0f172a">• Loss tangent (tan δ) model</text>
-    <text x="16" y="108" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#0f172a">• Percolation threshold</text>
-    <text x="16" y="126" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#0f172a">• Scikit-learn &amp; PyTorch</text>
+    <text x="14" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#14532d">&#8226; Claude Code / Copilot</text>
+    <text x="14" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#14532d">&#8226; Google Antigravity</text>
+    <text x="14" y="114" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#14532d">&#8226; SKILL.md instruction rules</text>
+    <text x="14" y="134" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#14532d">&#8226; Unit testing with pytest</text>
 
-    <rect x="14" y="142" width="137" height="22" rx="4" fill="#ccfbf1"/>
-    <text x="82" y="157" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#0f766e" text-anchor="middle">In Development</text>
+    <rect x="14" y="152" width="167" height="28" rx="4" fill="#ffffff" stroke="#86efac" stroke-width="1"/>
+    <text x="20" y="170" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#15803d">PRODUCTIVITY &amp; TESTS</text>
   </g>
 
   <!-- Arrow 3 to 4 -->
-  <polygon points="598,180 588,175 588,185" fill="#0d9488"/>
+  <line x1="675" y1="182" x2="705" y2="182" stroke="#16a34a" stroke-width="2"/>
+  <polygon points="705,182 697,178 697,186" fill="#16a34a"/>
 
-  <!-- STAGE 4: Signal AI / WearSense -->
-  <g transform="translate(605, 95)" filter="url(#softGlowComp)">
-    <rect width="165" height="175" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
-    <rect x="0" y="0" width="165" height="6" rx="3" fill="#d97706"/>
-    <text x="16" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#b45309">4. Signal Processing</text>
-    <text x="16" y="44" font-family="'JetBrains Mono', monospace" font-size="9" fill="#d97706">WearSense AI</text>
-    <line x1="16" y1="52" x2="149" y2="52" stroke="#fde68a" stroke-width="1"/>
+  <!-- STAGE 4: Reproducible Science & Verification -->
+  <g transform="translate(710, 85)" filter="url(#softShadowComp)">
+    <rect width="170" height="195" rx="8" fill="url(#stepGrad4)" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect x="0" y="0" width="170" height="4" rx="2" fill="#38bdf8"/>
+    <text x="14" y="24" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#38bdf8">STAGE 04</text>
+    <text x="14" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#ffffff">Verified Outputs</text>
+    <line x1="14" y1="52" x2="156" y2="52" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
     
-    <text x="16" y="72" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#0f172a">• P₁, P₂, P₃ pulse decomp.</text>
-    <text x="16" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#0f172a">• Wavelet artifact reject</text>
-    <text x="16" y="108" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#0f172a">• Tactile gesture classifier</text>
-    <text x="16" y="126" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#0f172a">• Sub-50ms latency</text>
+    <text x="14" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#cbd5e1">&#8226; Human code inspection</text>
+    <text x="14" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#cbd5e1">&#8226; Publication figures</text>
+    <text x="14" y="114" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#cbd5e1">&#8226; Reproducible records</text>
+    <text x="14" y="134" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#cbd5e1">&#8226; Git version control</text>
 
-    <rect x="14" y="142" width="137" height="22" rx="4" fill="#fef3c7"/>
-    <text x="82" y="157" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#b45309" text-anchor="middle">Planned Scope</text>
+    <rect x="14" y="152" width="142" height="28" rx="4" fill="rgba(255,255,255,0.08)" stroke="#38bdf8" stroke-width="1"/>
+    <text x="20" y="170" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#38bdf8">100% VERIFIED SCIENCE</text>
   </g>
 
-  <!-- Arrow 4 to 5 -->
-  <polygon points="783,180 773,175 773,185" fill="#d97706"/>
-
-  <!-- STAGE 5: Agentic AI and Closed Loop -->
-  <g transform="translate(790, 95)" filter="url(#softGlowComp)">
-    <rect width="120" height="175" rx="10" fill="#0b1424" stroke="#38bdf8" stroke-width="1.5"/>
-    <rect x="0" y="0" width="120" height="6" rx="3" fill="#38bdf8"/>
-    <text x="12" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="700" fill="#ffffff">5. Agentic AI</text>
-    <text x="12" y="44" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#38bdf8">MatSci Agent</text>
-    <line x1="12" y1="52" x2="108" y2="52" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-    
-    <text x="12" y="72" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#cbd5e1">• LangGraph</text>
-    <text x="12" y="88" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#cbd5e1">• MCP Tools</text>
-    <text x="12" y="104" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#cbd5e1">• RAG Literature</text>
-    <text x="12" y="120" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#cbd5e1">• AutoMat Lab</text>
-
-    <rect x="10" y="142" width="100" height="22" rx="4" fill="rgba(56,189,248,0.15)" stroke="rgba(56,189,248,0.3)" stroke-width="1"/>
-    <text x="60" y="157" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#38bdf8" text-anchor="middle">Planned</text>
-  </g>
-
-  <!-- FEEDBACK LOOP (Bottom Path from Stage 5 back to Stage 1) -->
-  <path d="M 850 280 C 850 410, 130 410, 130 280" stroke="#0284c7" stroke-width="2.5" stroke-dasharray="6,4" fill="none"/>
-  <polygon points="130,275 125,285 135,285" fill="#0284c7"/>
-
-  <!-- Feedback Annotation Badge -->
-  <g transform="translate(370, 375)">
-    <rect x="0" y="0" width="220" height="36" rx="18" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
-    <circle cx="18" cy="18" r="4" fill="#10b981"/>
-    <text x="30" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#ffffff">Closed-Loop Experiment Optimization</text>
-  </g>
-
-  <!-- Technology Stack Pill Row in Footer -->
-  <g transform="translate(50, 435)">
-    <text x="0" y="16" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#64748b">CORE STACK:</text>
-    
-    <rect x="90" y="2" width="70" height="22" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="125" y="17" font-family="'JetBrains Mono', monospace" font-size="10" fill="#334155" text-anchor="middle">Python</text>
-
-    <rect x="170" y="2" width="75" height="22" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="207" y="17" font-family="'JetBrains Mono', monospace" font-size="10" fill="#334155" text-anchor="middle">NumPy/SciPy</text>
-
-    <rect x="255" y="2" width="60" height="22" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="285" y="17" font-family="'JetBrains Mono', monospace" font-size="10" fill="#334155" text-anchor="middle">Pandas</text>
-
-    <rect x="325" y="2" width="90" height="22" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="370" y="17" font-family="'JetBrains Mono', monospace" font-size="10" fill="#334155" text-anchor="middle">scikit-learn</text>
-
-    <rect x="425" y="2" width="65" height="22" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="457" y="17" font-family="'JetBrains Mono', monospace" font-size="10" fill="#334155" text-anchor="middle">PyTorch</text>
-
-    <rect x="500" y="2" width="80" height="22" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="540" y="17" font-family="'JetBrains Mono', monospace" font-size="10" fill="#334155" text-anchor="middle">LangGraph</text>
-
-    <rect x="590" y="2" width="80" height="22" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="630" y="17" font-family="'JetBrains Mono', monospace" font-size="10" fill="#334155" text-anchor="middle">MCP Server</text>
-
-    <rect x="680" y="2" width="65" height="22" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-    <text x="712" y="17" font-family="'JetBrains Mono', monospace" font-size="10" fill="#334155" text-anchor="middle">BoTorch</text>
-  </g>
+  <!-- Bottom Clarification Banner -->
+  <rect x="40" y="305" width="840" height="48" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="56" y="326" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#0f172a">
+    Core Principle: AI tools serve as assistants to enhance coding productivity, reproducibility, and analytical rigor.
+  </text>
+  <text x="56" y="342" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#64748b">
+    All experimental hypotheses, physical interpretations, and publication figures remain strictly directed and verified by the materials scientist.
+  </text>
 </svg>
