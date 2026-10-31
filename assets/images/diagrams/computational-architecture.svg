@@ -112,7 +112,7 @@
   <!-- Arrow 4 to 5 -->
   <polygon points="783,180 773,175 773,185" fill="#d97706"/>
 
-  <!-- STAGE 5: Agentic AI & Closed Loop -->
+  <!-- STAGE 5: Agentic AI and Closed Loop -->
   <g transform="translate(790, 95)" filter="url(#softGlowComp)">
     <rect width="120" height="175" rx="10" fill="#0b1424" stroke="#38bdf8" stroke-width="1.5"/>
     <rect x="0" y="0" width="120" height="6" rx="3" fill="#38bdf8"/>
