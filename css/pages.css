@@ -72,6 +72,65 @@
     transform-origin: center;
     animation: sciOrbitSlow 40s linear infinite;
   }
+
+  /* Hero Section Entrance Cascade */
+  @keyframes heroFadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(22px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes heroCardEntrance {
+    from {
+      opacity: 0;
+      transform: translateY(28px) scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .hero-badge-row {
+    animation: heroFadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.05s backwards;
+  }
+
+  .hero-name {
+    animation: heroFadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.15s backwards;
+  }
+
+  .hero-researcher-title {
+    animation: heroFadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.25s backwards;
+  }
+
+  .hero-statement {
+    animation: heroFadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.35s backwards;
+  }
+
+  .hero-actions {
+    animation: heroFadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.45s backwards;
+  }
+
+  .hero-profiles {
+    animation: heroFadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.55s backwards;
+  }
+
+  .hero-portrait-card {
+    animation: heroCardEntrance 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.2s backwards;
+  }
+
+  .case-study-title {
+    animation: heroFadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.1s backwards;
+  }
+
+  .case-study-lead {
+    animation: heroFadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.2s backwards;
+  }
 }
 
 .hero-content {
@@ -159,6 +218,13 @@
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+}
+
+.hero-portrait-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(45, 212, 191, 0.35);
+  box-shadow: 0 25px 50px -10px rgba(0, 0, 0, 0.65), 0 0 35px rgba(20, 184, 166, 0.22);
 }
 
 .hero-portrait-wrap {

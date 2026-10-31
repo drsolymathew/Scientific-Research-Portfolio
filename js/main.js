@@ -216,4 +216,59 @@
     openModal('bibtex-modal');
   };
 
+  // 7. Progressive Scroll Reveal Animations
+  function initScrollReveal() {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
+    }
+
+    if (!('IntersectionObserver' in window)) {
+      return;
+    }
+
+    const selector = '.card, .card-expertise, .card-project, .academic-fact-box, .pub-card, .comp-card, .research-item, .skills-category, .cv-section, .contact-card, .project-card-full, .credibility-box, .comp-pillar-card';
+    const targets = document.querySelectorAll(selector);
+
+    targets.forEach((el) => {
+      // Skip if inside hero or case-study-hero
+      if (el.closest('.section-hero') || el.closest('.case-study-hero')) return;
+
+      el.classList.add('reveal-on-scroll');
+
+      // Stagger delay within parent grid or flex
+      const parent = el.parentElement;
+      if (parent) {
+        const siblings = Array.from(parent.children).filter(child => child.matches(selector));
+        if (siblings.length > 1) {
+          const index = siblings.indexOf(el);
+          const delay = (index % 4) * 80;
+          if (delay > 0) {
+            el.style.transitionDelay = `${delay}ms`;
+          }
+        }
+      }
+    });
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '0px 0px -40px 0px',
+      threshold: 0.08
+    });
+
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initScrollReveal);
+  } else {
+    initScrollReveal();
+  }
+
 })();
