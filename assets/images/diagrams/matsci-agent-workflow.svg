@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="100%" height="100%" aria-label="MatSci Research Agent: Agentic Graph &amp; Model Context Protocol Tooling Architecture">
+  <defs>
+    <linearGradient id="agentCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1a2f"/>
+      <stop offset="100%" stop-color="#08101e"/>
+    </linearGradient>
+    <filter id="softGlowAgent" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="14"/>
+  <rect width="100%" height="100%" fill="none" stroke="#e2e8f0" stroke-width="1.5" rx="14"/>
+
+  <!-- Header -->
+  <text x="45" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#0f172a" letter-spacing="0.5">AGENTIC RESEARCH WORKFLOW &amp; MCP INTEGRATION</text>
+  <text x="45" y="62" font-family="'JetBrains Mono', monospace" font-size="11" fill="#0d9488">LangGraph Orchestration &bull; Verifiable DOI Grounding &bull; Human-in-the-Loop Validation</text>
+
+  <!-- Node 1: User Query / Research Hypothesis -->
+  <g transform="translate(45, 95)" filter="url(#softGlowAgent)">
+    <rect width="170" height="110" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="14" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#0f172a">1. Research Query</text>
+    <text x="14" y="42" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748b">INPUT SPECIFICATION</text>
+    <line x1="14" y1="50" x2="156" y2="50" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="14" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#334155">• Formulation targets</text>
+    <text x="14" y="84" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#334155">• Dielectric constant (k)</text>
+    <text x="14" y="100" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#334155">• Pressure sensitivity S</text>
+  </g>
+
+  <!-- Connection 1 -> 2 -->
+  <line x1="215" y1="150" x2="255" y2="150" stroke="#0284c7" stroke-width="2"/>
+  <polygon points="255,150 247,146 247,154" fill="#0284c7"/>
+
+  <!-- Node 2: LangGraph Agent Supervisor -->
+  <g transform="translate(260, 85)" filter="url(#softGlowAgent)">
+    <rect width="180" height="130" rx="8" fill="#0b1424" stroke="#38bdf8" stroke-width="1.8"/>
+    <rect x="0" y="0" width="180" height="5" rx="2.5" fill="#38bdf8"/>
+    <text x="16" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#ffffff">2. Agent Supervisor</text>
+    <text x="16" y="42" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38bdf8">LangGraph Orchestrator</text>
+    <line x1="16" y1="50" x2="164" y2="50" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <text x="16" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#cbd5e1">• State machine planner</text>
+    <text x="16" y="84" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#cbd5e1">• Structured Pydantic schema</text>
+    <text x="16" y="100" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#cbd5e1">• Tool call invocation</text>
+    <text x="16" y="116" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#cbd5e1">• Confidence scoring</text>
+  </g>
+
+  <!-- Connection 2 -> Tools -->
+  <line x1="440" y1="150" x2="480" y2="150" stroke="#0284c7" stroke-width="2"/>
+  <polygon points="480,150 472,146 472,154" fill="#0284c7"/>
+
+  <!-- Node 3: Model Context Protocol (MCP) Scientific Tools Grid -->
+  <g transform="translate(485, 80)" filter="url(#softGlowAgent)">
+    <rect width="210" height="140" rx="8" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1.5"/>
+    <text x="16" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#0369a1">3. MCP Scientific Tools</text>
+    <text x="16" y="38" font-family="'JetBrains Mono', monospace" font-size="9" fill="#0284c7">EXTERNAL DATA PROVIDERS</text>
+    <line x1="16" y1="46" x2="194" y2="46" stroke="#bae6fd" stroke-width="1"/>
+
+    <rect x="14" y="52" width="182" height="22" rx="3" fill="#ffffff" stroke="#e0f2fe" stroke-width="1"/>
+    <text x="22" y="67" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#0f172a">Crossref &amp; arXiv REST API</text>
+
+    <rect x="14" y="78" width="182" height="22" rx="3" fill="#ffffff" stroke="#e0f2fe" stroke-width="1"/>
+    <text x="22" y="93" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#0f172a">PDF Extraction &amp; Chunking</text>
+
+    <rect x="14" y="104" width="182" height="22" rx="3" fill="#ffffff" stroke="#e0f2fe" stroke-width="1"/>
+    <text x="22" y="119" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#0f172a">DOI Attribution Validator</text>
+  </g>
+
+  <!-- Connection Tools -> Human in the loop -->
+  <line x1="695" y1="150" x2="730" y2="150" stroke="#0d9488" stroke-width="2"/>
+  <polygon points="730,150 722,146 722,154" fill="#0d9488"/>
+
+  <!-- Node 4: Human in the loop review -->
+  <g transform="translate(735, 95)" filter="url(#softGlowAgent)">
+    <rect width="115" height="110" rx="8" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5"/>
+    <text x="12" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#0f766e">4. Human Review</text>
+    <text x="12" y="42" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#0d9488">SCIENTIST APPROVAL</text>
+    <line x1="12" y1="50" x2="103" y2="50" stroke="#99f6e4" stroke-width="1"/>
+    <text x="12" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#334155">• Check stoichiometry</text>
+    <text x="12" y="84" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#334155">• Validate synthesis</text>
+    <text x="12" y="100" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#334155">• Approve additions</text>
+  </g>
+
+  <!-- Output Arrow Downwards -->
+  <path d="M 792 205 L 792 280 L 440 280 L 440 310" stroke="#0d9488" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+  <polygon points="440,315 435,307 445,307" fill="#0d9488"/>
+
+  <!-- Output Box: Verified Materials Database -->
+  <g transform="translate(180, 315)" filter="url(#softGlowAgent)">
+    <rect width="520" height="75" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect x="0" y="0" width="520" height="4" rx="2" fill="#10b981"/>
+    <text x="20" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#0f172a">Verified Structured Materials Formulation Repository</text>
+    <text x="20" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#475569">
+      Deterministic tables mapping: Matrix Type (PDMS/PVDF) &bull; Filler Wt% &bull; Processing Parameters &bull; Effective Permittivity &bull; Verified DOI Citation
+    </text>
+    <text x="20" y="62" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#059669">
+      STATUS: Zero Hallucinations &bull; 100% Traceable to Authoritative Publisher Records
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,140 @@
+[
+  {
+    "id": "sensorlab-analytics",
+    "title": "SensorLab Analytics",
+    "tagline": "Automated Signal Calibration & Electromechanical Parameter Extraction",
+    "description": "A scientific Python application engineered for reproducible analysis of flexible pressure sensor data. Automates the extraction of sensitivity slopes (S = δ(ΔC/C₀)/δP), linear working range boundaries, response/relaxation time constants (τ_r, τ_d), and cyclic hysteresis loops directly from raw LCR meter time-series CSV outputs.",
+    "status": "In Development",
+    "statusClass": "in-progress",
+    "category": "Scientific Programming",
+    "techStack": ["Python 3.11", "NumPy", "Pandas", "SciPy", "Matplotlib", "pytest"],
+    "githubUrl": "https://github.com/soly-mathew/sensorlab-analytics",
+    "isRepoUpcoming": true,
+    "demoUrl": null,
+    "architecture": "Modular ETL pipeline: Raw LCR CSV Ingestion → Baseline Drift Correction (Polynomial Filter) → Dynamic Hysteresis Quantitation → Sensitivity Slope Regression → Automated PDF/SVG Report Generation.",
+    "scientificLink": {
+      "paperTitle": "PDMS–TiO₂–ZnO Ternary Dielectric Flexible Capacitive Pressure Sensors",
+      "journal": "Smart Materials and Structures (2026)",
+      "doi": "10.1088/1361-665X/ae8228"
+    },
+    "outcomes": [
+      "Reduces manual experimental curve-fitting time from hours to seconds per test run.",
+      "Ensures deterministic parameter extraction across multi-cycle 2,000+ fatigue datasets.",
+      "Open-source testing suite with 95%+ unit test coverage for reproducible lab science."
+    ],
+    "limitations": [
+      "Currently optimized for parallel-plate capacitive sensors; piezoresistive readout module in planning.",
+      "Requires consistent sampling rate headers from Keysight/Agilent/Hioki LCR instruments."
+    ]
+  },
+  {
+    "id": "nanopredict-ai",
+    "title": "NanoPredict AI",
+    "tagline": "Machine Learning for Nanocomposite Dielectric & Sensor Performance Prediction",
+    "description": "A scientific machine-learning pipeline designed to predict effective dielectric permittivity (ε_eff), loss tangent (tan δ), and capacitive pressure sensitivity in multi-phase polymer nanocomposites. Correlates filler weight fractions (TiO₂, ZnO, Carbon Black, ZrO₂), particle morphology, and ultrasonic processing parameters with physical transducer properties.",
+    "status": "In Development",
+    "statusClass": "in-progress",
+    "category": "AI & Machine Learning",
+    "techStack": ["Python", "scikit-learn", "SciPy", "XGBoost", "PyTorch", "Jupyter"],
+    "githubUrl": "https://github.com/soly-mathew/nanopredict-ai",
+    "isRepoUpcoming": true,
+    "demoUrl": null,
+    "architecture": "Materials Informatics Pipeline: Empirical Formulation Database → Physicochemical Feature Engineering (aspect ratio, surface area, volume fraction) → Multi-Model Regression Ensemble (Random Forests, Gradient Boosting, Multi-Layer Perceptron) → Uncertainty Quantification.",
+    "scientificLink": {
+      "paperTitle": "Design and characterization of PDMS-CB-ZnO-ternary composite flexible sensors",
+      "journal": "Flexible and Printed Electronics (2025)",
+      "doi": "10.1088/2058-8585/adc81e"
+    },
+    "outcomes": [
+      "Initial validation on published ternary PDMS datasets captures nonlinear permittivity jumps near percolation thresholds.",
+      "Identifies optimal dual-filler ratios (e.g. 0.5 wt% TiO₂ + 0.5 wt% ZnO) without requiring exhaustive trial-and-error trial casting.",
+      "Generates 2D/3D response surface contours for materials screening."
+    ],
+    "limitations": [
+      "Prediction accuracy constrained by small-sample empirical literature datasets (N ~ 150 formulations).",
+      "Assumes homogenous nanoparticle dispersion without severe micro-scale agglomeration."
+    ]
+  },
+  {
+    "id": "matsci-research-agent",
+    "title": "MatSci Research Agent",
+    "tagline": "Autonomous Literature Synthesis & Verified Material Property Extraction",
+    "description": "An agentic AI research assistant tailored for materials science and sensor engineering literature. Combines Retrieval-Augmented Generation (RAG) over open-access scholarly papers with deterministic tool calling to extract synthesis protocols, stoichiometric ratios, and sensor performance metrics with verifiable DOI citations.",
+    "status": "Planned",
+    "statusClass": "planned",
+    "category": "Agentic AI Development",
+    "techStack": ["LangGraph", "Python", "MCP Server", "ChromaDB", "Crossref API", "Pydantic"],
+    "githubUrl": "https://github.com/soly-mathew/matsci-research-agent",
+    "isRepoUpcoming": true,
+    "demoUrl": null,
+    "architecture": "Agentic Graph: Literature Retrieval Node (Crossref & arXiv REST) → PDF Parser & Chunking Engine → Vector DB Semantic Search → Tool-Calling Verification Node (DOI and author validation) → Structured Synthesis Protocol Extractor → Human-in-the-Loop Review.",
+    "scientificLink": {
+      "paperTitle": "ZnO-GO-PVDF Dielectric Composite Layer for Wearable Applications",
+      "journal": "Journal of Applied Polymer Science (2026)",
+      "doi": "10.1002/app.70439"
+    },
+    "outcomes": [
+      "Eliminates hallucinated material properties by strictly grounding extractions in peer-reviewed DOI metadata.",
+      "Extracts structured tabular datasets from unstructured experimental materials texts.",
+      "Implements Model Context Protocol (MCP) server endpoints for integration with scientific IDEs."
+    ],
+    "limitations": [
+      "Currently restricted to open-access and author-archived manuscripts.",
+      "Complex schematic table parsing across legacy PDF scans requires human-in-the-loop oversight."
+    ]
+  },
+  {
+    "id": "wearsense-ai",
+    "title": "WearSense AI",
+    "tagline": "Wearable Sensor Signal Processing, Waveform Decomposition & Gesture Tracking",
+    "description": "An intelligent signal processing and classification framework for flexible epidermal capacitive sensors. Designed for continuous physiological wrist pulse wave decomposition (resolving percussion P₁, tidal P₂, and dicrotic P₃ notches) and real-time human-machine interface tactile gesture classification with low computational latency.",
+    "status": "Planned",
+    "statusClass": "planned",
+    "category": "AI & Machine Learning",
+    "techStack": ["Python", "scikit-learn", "SciPy Signal", "NumPy", "PyTorch Light"],
+    "githubUrl": "https://github.com/soly-mathew/wearsense-ai",
+    "isRepoUpcoming": true,
+    "demoUrl": null,
+    "architecture": "Waveform Pipeline: Streaming Capacitance Feed → Wavelet Denoising & Motion Artifact Removal → Peak Detection & Augmentation Index (AI_r) Extraction → 1D-CNN / Random Forest Gesture Classifier.",
+    "scientificLink": {
+      "paperTitle": "Fabrication of Polydimethylsiloxane-La₂O₃ Composites-Based Sensors",
+      "journal": "IEEE Access (2025)",
+      "doi": "10.1109/ACCESS.2025.3577066"
+    },
+    "outcomes": [
+      "Demonstrated algorithmic separation of subtle radial artery wave peaks from baseline drift in recorded volunteer datasets.",
+      "High accuracy (>94%) on finger flexion angle discrimination across 15° to 90° articulation testing."
+    ],
+    "limitations": [
+      "Severe dynamic motion artifacts (e.g. rapid walking) require differential dual-electrode hardware compensation.",
+      "Initial models trained on volunteer cohort; multi-demographic validation pending."
+    ]
+  },
+  {
+    "id": "automat-lab",
+    "title": "AutoMat Lab",
+    "tagline": "Bayesian Optimisation & Experiment Recommendation for Smart Materials",
+    "description": "An active learning and Bayesian optimization platform designed to accelerate functional polymer nanocomposite discovery. Formulates sequential experimental recommendations to maximize capacitive sensitivity while keeping dielectric loss (tan δ) and elastic stiffness within specified operational constraints.",
+    "status": "Planned",
+    "statusClass": "planned",
+    "category": "Agentic AI & Optimization",
+    "techStack": ["Python", "BoTorch", "GPyTorch", "Pandas", "Streamlit"],
+    "githubUrl": "https://github.com/soly-mathew/automat-lab",
+    "isRepoUpcoming": true,
+    "demoUrl": null,
+    "architecture": "Closed-Loop Active Learning: Prior Formulation Matrix → Gaussian Process Surrogate Model → Expected Improvement (EI) Acquisition Function → Next Candidate Experiment Suggestion → Lab Validation & Feedback.",
+    "scientificLink": {
+      "paperTitle": "Zirconia nanoparticles filled PDMS composites flexible capacitance pressure sensor",
+      "journal": "Sensors International (2025)",
+      "doi": "10.1016/j.sintl.2025.100330"
+    },
+    "outcomes": [
+      "Aims to reduce experimental formulation trials by 60%+ compared to standard grid search compounding.",
+      "Identifies multi-objective Pareto-optimal trade-offs between flexibility and dielectric constant."
+    ],
+    "limitations": [
+      "Assumes laboratory mixing and environmental humidity remain tightly controlled across recommended batches.",
+      "Requires empirical cold-start dataset before Gaussian process model produces reliable candidates."
+    ]
+  }
+]

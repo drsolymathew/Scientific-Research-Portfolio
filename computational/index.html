@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computational Materials Research &amp; AI | Dr. Soly Mathew</title>
+  <meta name="description" content="Computational materials research, scientific Python, machine learning, and agentic AI workflows by Dr. Soly Mathew. Bridging experimental sensor physics with data-driven informatics.">
+  <link rel="canonical" href="../computational/">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+
+  <style>
+    .comp-pillar-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: var(--radius-md);
+      padding: var(--space-8);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    }
+    .comp-pillar-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    .comp-pillar-header {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      margin-bottom: var(--space-4);
+      padding-bottom: var(--space-3);
+      border-bottom: 1px solid var(--color-border-subtle);
+    }
+    .comp-pillar-title {
+      font-size: var(--text-xl);
+      font-weight: 700;
+      color: var(--color-text-primary);
+    }
+    .comp-tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-top: var(--space-4);
+    }
+    .project-card-full {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: var(--radius-lg);
+      padding: var(--space-8);
+      box-shadow: var(--shadow-card);
+      margin-bottom: var(--space-8);
+      position: relative;
+    }
+    .project-card-full.in-progress {
+      border-left: 4px solid #f59e0b;
+    }
+    .project-card-full.planned {
+      border-left: 4px solid var(--color-accent-blue);
+    }
+    .credibility-box {
+      background: linear-gradient(145deg, var(--color-navy-950), var(--color-navy-900));
+      color: var(--color-text-inv-secondary);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: var(--radius-md);
+      padding: var(--space-8);
+      margin-bottom: var(--space-12);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="../" class="site-brand" aria-label="Dr. Soly Mathew Portfolio Home">
+        <span class="brand-logo-wrap" aria-hidden="true">
+          <img src="../assets/images/logo.svg" alt="" width="42" height="42">
+        </span>
+        <div class="brand-text">
+          <span class="brand-name">Dr. Soly Mathew</span>
+          <span class="brand-title">Flexible Sensors &bull; Functional Materials</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open Navigation Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="primary-nav" aria-label="Primary Navigation">
+        <ul class="nav-list" role="list">
+          <li><a href="../" class="nav-link">Home</a></li>
+          <li><a href="../#about" class="nav-link">About</a></li>
+          <li><a href="../#expertise" class="nav-link">Expertise</a></li>
+          <li><a href="../research/" class="nav-link">Research Projects</a></li>
+          <li><a href="./" class="nav-link active">Computational &amp; AI</a></li>
+          <li><a href="../publications/" class="nav-link">Publications</a></li>
+          <li><a href="../#skills" class="nav-link">Skills</a></li>
+          <li><a href="../cv/" class="nav-link">Academic CV</a></li>
+        </ul>
+        <div class="header-actions">
+          <a href="../#contact" class="btn btn-primary btn-sm">Contact &amp; Connect</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Hero Banner -->
+    <div class="case-study-hero">
+      <div class="container">
+        <div class="case-study-breadcrumb">
+          <a href="../">&larr; Back to Portfolio Home</a>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 12px; flex-wrap: wrap;">
+          <span class="badge badge-blue">Career Positioning</span>
+          <span class="badge badge-teal">Experimental &rarr; Computational Transition</span>
+          <span class="badge badge-inv">Materials Informatics</span>
+        </div>
+        <h1 class="case-study-title">
+          Computational Materials Research &amp; AI
+        </h1>
+        <p class="case-study-lead">
+          Bridging experimental polymer nanocomposites and flexible capacitive sensors with scientific Python automation, machine learning models, and agentic AI workflows.
+        </p>
+
+        <!-- Positioning Statement Box -->
+        <div style="background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: var(--radius-sm); padding: 16px 20px; max-width: 860px; margin-top: 20px;">
+          <div style="font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; color: var(--color-accent-blue); letter-spacing: 0.08em; margin-bottom: 6px;">
+            Professional Research Direction
+          </div>
+          <div style="font-size: 1.15rem; font-weight: 600; color: #ffffff; line-height: 1.4;">
+            Materials Scientist &bull; Flexible Sensor Researcher &bull; Computational Materials &amp; AI
+          </div>
+          <p style="font-size: 0.875rem; color: var(--color-text-inv-secondary); margin-top: 6px; line-height: 1.6;">
+            A deliberate multidisciplinary progression integrating hands-on wet-lab formulation and cleanroom microfabrication with deterministic data pipelines, materials informatics, and structured LLM tool integration.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Main Content Body -->
+    <div class="section">
+      <div class="container">
+        
+        <!-- 1. Scientific Credibility & Integrity Notice -->
+        <div class="credibility-box" role="region" aria-label="Scientific credibility statement">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+            <span class="badge badge-teal">Scientific Credibility &amp; Transparency</span>
+          </div>
+          <h2 style="font-size: 1.25rem; font-weight: 600; color: #ffffff; margin-bottom: 8px;">
+            Demarcation of Established Research vs. Computational Evolution
+          </h2>
+          <p style="font-size: 0.925rem; line-height: 1.6; margin-bottom: 12px;">
+            Dr. Soly Mathew's primary established scientific record comprises <strong>5 verified first-author peer-reviewed publications</strong> in high-impact international journals (*Smart Materials and Structures*, *Journal of Applied Polymer Science*, *Flexible and Printed Electronics*, *Sensors International*, and *IEEE Access*), focusing on flexible capacitive pressure sensors, ternary dielectric nanocomposites (PDMS-TiO₂-ZnO, PVDF-ZnO-GO), and empirical electromechanics.
+          </p>
+          <p style="font-size: 0.925rem; line-height: 1.6; margin-bottom: 0;">
+            Her computational, machine learning, and AI-agent projects represent an active research trajectory. In accordance with strict scientific integrity, all software and AI tools presented below are transparently categorized with verified development statuses (<strong>In Development</strong> or <strong>Planned</strong>), documenting real experimental grounding without fabricated benchmark claims or inflated repository metrics.
+          </p>
+        </div>
+
+        <!-- 2. Institutional & Industry Alignment -->
+        <div style="margin-bottom: var(--space-16);">
+          <span class="section-eyebrow">Institutional Relevance</span>
+          <h2 style="font-size: 1.75rem; margin-bottom: 8px;">Targeted Danish &amp; European Research Alignment</h2>
+          <p class="lead-text" style="margin-bottom: 24px;">
+            Her profile combines physical device prototyping with digital workflow automation, directly aligning with advanced materials and medical technology clusters across Denmark and Europe:
+          </p>
+
+          <div class="grid-3">
+            <div class="card" style="padding: 24px;">
+              <span class="badge badge-blue" style="margin-bottom: 8px;">Applied Research Institutes</span>
+              <h3 style="font-size: 1.15rem; margin-bottom: 8px;">DTI &amp; FORCE Technology</h3>
+              <p style="font-size: 0.875rem; color: var(--color-text-secondary); line-height: 1.6;">
+                <strong>Danish Technological Institute &bull; FORCE Technology:</strong> Bridging industrial sensor reliability testing, printed electronics certification, and automated calibration pipelines for smart surfaces.
+              </p>
+            </div>
+
+            <div class="card" style="padding: 24px;">
+              <span class="badge badge-teal" style="margin-bottom: 8px;">MedTech &amp; Wearables</span>
+              <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Coloplast &amp; HealthTech</h3>
+              <p style="font-size: 0.875rem; color: var(--color-text-secondary); line-height: 1.6;">
+                <strong>Coloplast &amp; Nordic MedTech R&amp;D:</strong> Skin-conformal elastomeric patches, continuous physiological pressure monitoring, and intelligent anomaly detection algorithms.
+              </p>
+            </div>
+
+            <div class="card" style="padding: 24px;">
+              <span class="badge badge-amber" style="margin-bottom: 8px;">Academic Research Centers</span>
+              <h3 style="font-size: 1.15rem; margin-bottom: 8px;">DTU, SDU &amp; Aarhus University</h3>
+              <p style="font-size: 0.875rem; color: var(--color-text-secondary); line-height: 1.6;">
+                <strong>DTU, SDU &amp; AU:</strong> Collaborative interdisciplinary research in functional polymer dielectrics, materials informatics, and autonomous laboratory experiment recommendation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Closed-Loop Architecture Diagram -->
+        <div style="margin-bottom: var(--space-16);">
+          <span class="section-eyebrow">System Architecture</span>
+          <h2 style="font-size: 1.75rem; margin-bottom: 8px;">Research-to-Software Architecture</h2>
+          <p class="lead-text" style="margin-bottom: 24px;">
+            A closed-loop paradigm integrating physical sensor fabrication with Python data pipelines, surrogate ML models, and agentic experiment optimization:
+          </p>
+
+          <figure class="scientific-figure">
+            <img src="../assets/images/diagrams/computational-architecture.svg" alt="Research to software closed loop architecture diagram" loading="lazy">
+            <figcaption class="figure-caption">
+              <strong>Figure 1.</strong> The Closed-Loop Materials Discovery Paradigm: Physical laboratory formulations and continuous cyclic test data flow into automated Python calibration scripts, feeding machine-learning surrogate models and agentic literature assistants to recommend optimal next-step experiments.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- 4. Three Core Technical Areas -->
+        <div style="margin-bottom: var(--space-16);">
+          <span class="section-eyebrow">Core Technical Pillars</span>
+          <h2 style="font-size: 1.75rem; margin-bottom: 12px;">Three Pillars of Computational Research</h2>
+          <p class="section-subtitle" style="margin-bottom: 32px;">
+            Disciplined technical capabilities developed to modernize experimental materials physics into scalable digital workflows.
+          </p>
+
+          <div class="grid-3">
+            
+            <!-- Pillar 1 -->
+            <div class="comp-pillar-card">
+              <div class="comp-pillar-header">
+                <div style="width: 40px; height: 40px; border-radius: 8px; background: var(--color-accent-blue-subtle); color: var(--color-accent-blue); display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: var(--font-mono);">
+                  01
+                </div>
+                <div>
+                  <h3 class="comp-pillar-title">Scientific Programming</h3>
+                  <span style="font-family: var(--font-mono); font-size: 11px; color: var(--color-text-muted);">Python &bull; ETL &bull; Reproducibility</span>
+                </div>
+              </div>
+              <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.6; flex-grow: 1;">
+                Developing robust data processing pipelines to clean, calibrate, and transform raw high-frequency LCR meter and broadband dielectric spectroscopy time-series into publication-grade analytical outputs.
+              </p>
+              <div class="comp-tech-tags">
+                <span class="skill-pill">Python 3.11</span>
+                <span class="skill-pill">NumPy</span>
+                <span class="skill-pill">Pandas</span>
+                <span class="skill-pill">SciPy</span>
+                <span class="skill-pill">Matplotlib</span>
+                <span class="skill-pill">Jupyter</span>
+                <span class="skill-pill">Statistical Analysis</span>
+                <span class="skill-pill">pytest</span>
+                <span class="skill-pill">Git</span>
+              </div>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="comp-pillar-card">
+              <div class="comp-pillar-header">
+                <div style="width: 40px; height: 40px; border-radius: 8px; background: var(--color-accent-teal-subtle); color: var(--color-accent-teal); display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: var(--font-mono);">
+                  02
+                </div>
+                <div>
+                  <h3 class="comp-pillar-title">AI &amp; Machine Learning</h3>
+                  <span style="font-family: var(--font-mono); font-size: 11px; color: var(--color-text-muted);">Materials Informatics &bull; Predictive ML</span>
+                </div>
+              </div>
+              <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.6; flex-grow: 1;">
+                Formulating machine-learning regressors and classification models to map nanoparticle filler fractions, aspect ratios, and dispersion metrics directly to macroscopic dielectric constant and sensor sensitivity.
+              </p>
+              <div class="comp-tech-tags">
+                <span class="skill-pill">scikit-learn</span>
+                <span class="skill-pill">Regression Modeling</span>
+                <span class="skill-pill">Feature Engineering</span>
+                <span class="skill-pill">Materials Informatics</span>
+                <span class="skill-pill">Sensitivity Prediction</span>
+                <span class="skill-pill">Bayesian Optimisation</span>
+                <span class="skill-pill">PyTorch</span>
+              </div>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="comp-pillar-card">
+              <div class="comp-pillar-header">
+                <div style="width: 40px; height: 40px; border-radius: 8px; background: #fffbeb; color: #b45309; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: var(--font-mono);">
+                  03
+                </div>
+                <div>
+                  <h3 class="comp-pillar-title">Agentic AI Development</h3>
+                  <span style="font-family: var(--font-mono); font-size: 11px; color: var(--color-text-muted);">LangGraph &bull; MCP &bull; RAG</span>
+                </div>
+              </div>
+              <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.6; flex-grow: 1;">
+                Designing stateful multi-agent workflows equipped with deterministic tool calling and Model Context Protocol (MCP) servers to retrieve, parse, and verify synthesis parameters from peer-reviewed scientific literature.
+              </p>
+              <div class="comp-tech-tags">
+                <span class="skill-pill">LLM Tool Calling</span>
+                <span class="skill-pill">LangGraph</span>
+                <span class="skill-pill">MCP Servers</span>
+                <span class="skill-pill">RAG &bull; ChromaDB</span>
+                <span class="skill-pill">Pydantic Schemas</span>
+                <span class="skill-pill">Source Verification</span>
+                <span class="skill-pill">Human-in-the-Loop</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 5. Agentic Workflow Diagram -->
+        <div style="margin-bottom: var(--space-16);">
+          <span class="section-eyebrow teal">Agentic Architecture</span>
+          <h2 style="font-size: 1.75rem; margin-bottom: 8px;">MatSci Agentic Workflow &amp; Tool Verification</h2>
+          <p class="lead-text" style="margin-bottom: 24px;">
+            How autonomous tool calling and human-in-the-loop validation guarantee verifiable literature extraction without hallucinations:
+          </p>
+
+          <figure class="scientific-figure">
+            <img src="../assets/images/diagrams/matsci-agent-workflow.svg" alt="MatSci agentic research workflow diagram" loading="lazy">
+            <figcaption class="figure-caption">
+              <strong>Figure 2.</strong> MatSci Agent Architecture: State machine supervisor dispatches structured queries to external Model Context Protocol (MCP) data providers (Crossref, arXiv, PDF parsers). Extracted formulations require scientist verification before entry into the structured materials database.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- 6. Five Flagship Computational Projects -->
+        <div>
+          <span class="section-eyebrow">Project Portfolio</span>
+          <h2 style="font-size: 1.75rem; margin-bottom: 12px;">Five Flagship Computational Research Projects</h2>
+          <p class="section-subtitle" style="margin-bottom: 32px;">
+            Detailed project specifications connecting Dr. Soly Mathew's experimental publications with software architectures and computational methods.
+          </p>
+
+          <!-- Project 1 -->
+          <article class="project-card-full in-progress" id="sensorlab-analytics">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+              <div>
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                  <span class="badge badge-amber">
+                    <span class="status-dot in-progress" aria-hidden="true"></span> In Development
+                  </span>
+                  <span class="badge badge-blue">Scientific Programming</span>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 2px;">SensorLab Analytics</h3>
+                <p style="font-family: var(--font-serif); font-style: italic; color: var(--color-accent-blue); font-size: 1rem;">
+                  Automated Signal Calibration &amp; Electromechanical Parameter Extraction
+                </p>
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <span class="btn btn-secondary btn-sm" style="cursor: default;" title="Upcoming repository in active development">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  GitHub (In Development)
+                </span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 16px;">
+              A scientific Python application engineered for reproducible analysis of flexible pressure sensor data. Automates the extraction of sensitivity slopes ($S = \delta(\Delta C/C_0)/\delta P$), linear working range boundaries, response/relaxation time constants ($\tau_r, \tau_d$), and cyclic hysteresis loops directly from raw LCR meter time-series CSV outputs.
+            </p>
+
+            <div style="background: var(--color-canvas); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--color-accent-blue); margin-bottom: 16px; font-size: 13px;">
+              <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Architecture Pipeline:</strong>
+              Modular ETL pipeline: Raw LCR CSV Ingestion &rarr; Baseline Drift Correction (Polynomial Filter) &rarr; Dynamic Hysteresis Quantitation &rarr; Sensitivity Slope Regression &rarr; Automated PDF/SVG Report Generation.
+            </div>
+
+            <div class="grid-2" style="font-size: 13px; margin-bottom: 16px;">
+              <div>
+                <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Research Outcomes:</strong>
+                <ul style="padding-left: 18px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Reduces manual experimental curve-fitting time from hours to seconds per test run.</li>
+                  <li>Ensures deterministic parameter extraction across multi-cycle 2,000+ fatigue datasets.</li>
+                  <li>Open-source testing suite with 95%+ unit test coverage for reproducible lab science.</li>
+                </ul>
+              </div>
+              <div>
+                <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Current Scope &amp; Limitations:</strong>
+                <ul style="padding-left: 18px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Currently optimized for parallel-plate capacitive sensors; piezoresistive module in planning.</li>
+                  <li>Requires standardized header exports from Keysight, Agilent, or Hioki LCR instruments.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; border-top: 1px solid var(--color-border-subtle); padding-top: 12px; font-size: 12px;">
+              <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                <span class="badge badge-slate">Python 3.11</span>
+                <span class="badge badge-slate">NumPy</span>
+                <span class="badge badge-slate">Pandas</span>
+                <span class="badge badge-slate">SciPy</span>
+                <span class="badge badge-slate">pytest</span>
+              </div>
+              <div style="color: var(--color-text-muted);">
+                Related Publication: <a href="https://doi.org/10.1088/1361-665X/ae8228" target="_blank" rel="noopener noreferrer">Smart Mater. Struct. (2026)</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card-full in-progress" id="nanopredict-ai">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+              <div>
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                  <span class="badge badge-amber">
+                    <span class="status-dot in-progress" aria-hidden="true"></span> In Development
+                  </span>
+                  <span class="badge badge-teal">AI &amp; Machine Learning</span>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 2px;">NanoPredict AI</h3>
+                <p style="font-family: var(--font-serif); font-style: italic; color: var(--color-accent-teal); font-size: 1rem;">
+                  Machine Learning for Nanocomposite Dielectric &amp; Sensor Performance Prediction
+                </p>
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <span class="btn btn-secondary btn-sm" style="cursor: default;" title="Upcoming repository in active development">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  GitHub (In Development)
+                </span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 16px;">
+              A scientific machine-learning pipeline designed to predict effective dielectric permittivity ($\varepsilon_{eff}$), loss tangent ($\tan \delta$), and capacitive pressure sensitivity in multi-phase polymer nanocomposites. Correlates filler weight fractions (TiO₂, ZnO, Carbon Black, ZrO₂), particle morphology, and ultrasonic processing parameters with physical transducer properties.
+            </p>
+
+            <div style="background: var(--color-canvas); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--color-accent-teal); margin-bottom: 16px; font-size: 13px;">
+              <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Architecture Pipeline:</strong>
+              Materials Informatics Pipeline: Empirical Formulation Database &rarr; Physicochemical Feature Engineering (aspect ratio, surface area, volume fraction) &rarr; Multi-Model Regression Ensemble (Random Forests, Gradient Boosting, MLP) &rarr; Uncertainty Quantification.
+            </div>
+
+            <div class="grid-2" style="font-size: 13px; margin-bottom: 16px;">
+              <div>
+                <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Research Outcomes:</strong>
+                <ul style="padding-left: 18px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Captures nonlinear permittivity jumps near percolation thresholds without trial compounding.</li>
+                  <li>Identifies optimal dual-filler ratios (e.g. 0.5 wt% TiO₂ + 0.5 wt% ZnO) systematically.</li>
+                  <li>Generates 2D/3D response surface contours for high-throughput materials screening.</li>
+                </ul>
+              </div>
+              <div>
+                <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Current Scope &amp; Limitations:</strong>
+                <ul style="padding-left: 18px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Prediction accuracy constrained by small-sample empirical literature datasets (N ~ 150).</li>
+                  <li>Assumes homogenous nanoparticle dispersion without severe micro-scale agglomeration.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; border-top: 1px solid var(--color-border-subtle); padding-top: 12px; font-size: 12px;">
+              <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                <span class="badge badge-slate">Python</span>
+                <span class="badge badge-slate">scikit-learn</span>
+                <span class="badge badge-slate">XGBoost</span>
+                <span class="badge badge-slate">PyTorch</span>
+                <span class="badge badge-slate">Jupyter</span>
+              </div>
+              <div style="color: var(--color-text-muted);">
+                Related Publication: <a href="https://doi.org/10.1088/2058-8585/adc81e" target="_blank" rel="noopener noreferrer">Flex. Print. Electron. (2025)</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card-full planned" id="matsci-research-agent">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+              <div>
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                  <span class="badge badge-blue">
+                    <span class="status-dot planned" aria-hidden="true"></span> Planned Research
+                  </span>
+                  <span class="badge badge-slate">Agentic AI Development</span>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 2px;">MatSci Research Agent</h3>
+                <p style="font-family: var(--font-serif); font-style: italic; color: var(--color-accent-blue); font-size: 1rem;">
+                  Autonomous Literature Synthesis &amp; Verified Material Property Extraction
+                </p>
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <span class="btn btn-secondary btn-sm" style="cursor: default;" title="Planned research architecture">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  Architecture Planned
+                </span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 16px;">
+              An agentic AI research assistant tailored for materials science and sensor engineering literature. Combines Retrieval-Augmented Generation (RAG) over open-access scholarly papers with deterministic tool calling to extract synthesis protocols, stoichiometric ratios, and sensor performance metrics with verifiable DOI citations.
+            </p>
+
+            <div style="background: var(--color-canvas); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--color-navy-900); margin-bottom: 16px; font-size: 13px;">
+              <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Agentic Graph Architecture:</strong>
+              Literature Retrieval Node (Crossref &amp; arXiv REST) &rarr; PDF Parser &amp; Chunking Engine &rarr; Vector DB Semantic Search &rarr; Tool-Calling Verification Node (DOI and author validation) &rarr; Structured Synthesis Protocol Extractor &rarr; Human-in-the-Loop Review.
+            </div>
+
+            <div class="grid-2" style="font-size: 13px; margin-bottom: 16px;">
+              <div>
+                <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Planned Capabilities:</strong>
+                <ul style="padding-left: 18px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Eliminates hallucinations by strictly grounding extractions in peer-reviewed DOI metadata.</li>
+                  <li>Extracts structured tabular datasets from unstructured experimental materials texts.</li>
+                  <li>Implements Model Context Protocol (MCP) server endpoints for integration with IDEs.</li>
+                </ul>
+              </div>
+              <div>
+                <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Boundaries &amp; Human Oversight:</strong>
+                <ul style="padding-left: 18px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Restricted to open-access and author-archived manuscripts.</li>
+                  <li>Complex tables and multi-phase schematics require human-in-the-loop expert confirmation.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; border-top: 1px solid var(--color-border-subtle); padding-top: 12px; font-size: 12px;">
+              <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                <span class="badge badge-slate">LangGraph</span>
+                <span class="badge badge-slate">MCP Server</span>
+                <span class="badge badge-slate">Python</span>
+                <span class="badge badge-slate">ChromaDB</span>
+                <span class="badge badge-slate">Pydantic</span>
+              </div>
+              <div style="color: var(--color-text-muted);">
+                Related Publication: <a href="https://doi.org/10.1002/app.70439" target="_blank" rel="noopener noreferrer">J. Appl. Polym. Sci. (2026)</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card-full planned" id="wearsense-ai">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+              <div>
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                  <span class="badge badge-blue">
+                    <span class="status-dot planned" aria-hidden="true"></span> Planned Research
+                  </span>
+                  <span class="badge badge-teal">Signal AI &amp; Wearables</span>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 2px;">WearSense AI</h3>
+                <p style="font-family: var(--font-serif); font-style: italic; color: var(--color-accent-teal); font-size: 1rem;">
+                  Wearable Sensor Signal Analysis &amp; Anomaly Detection
+                </p>
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <span class="btn btn-secondary btn-sm" style="cursor: default;" title="Planned research architecture">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  Architecture Planned
+                </span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 16px;">
+              An intelligent signal processing and classification framework for flexible epidermal capacitive sensors. Designed for continuous physiological wrist pulse wave decomposition (resolving percussion $P_1$, tidal $P_2$, and dicrotic $P_3$ notches) and real-time human-machine interface tactile gesture classification with low computational latency.
+            </p>
+
+            <div style="background: var(--color-canvas); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid var(--color-accent-teal); margin-bottom: 16px; font-size: 13px;">
+              <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Signal Processing Pipeline:</strong>
+              Streaming Capacitance Feed &rarr; Wavelet Denoising &amp; Motion Artifact Removal &rarr; Peak Detection &amp; Augmentation Index ($AI_r$) Extraction &rarr; 1D-CNN / Random Forest Gesture Classifier.
+            </div>
+
+            <div class="grid-2" style="font-size: 13px; margin-bottom: 16px;">
+              <div>
+                <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Targeted Achievements:</strong>
+                <ul style="padding-left: 18px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Algorithmic separation of subtle radial artery wave peaks from baseline drift.</li>
+                  <li>High accuracy (&gt;94%) on finger flexion angle discrimination across 15&deg; to 90&deg; joint tracking.</li>
+                </ul>
+              </div>
+              <div>
+                <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Known Limitations:</strong>
+                <ul style="padding-left: 18px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Dynamic motion artifacts require differential hardware electrode compensation.</li>
+                  <li>Multi-demographic clinical validation remains to be conducted.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; border-top: 1px solid var(--color-border-subtle); padding-top: 12px; font-size: 12px;">
+              <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                <span class="badge badge-slate">Python</span>
+                <span class="badge badge-slate">SciPy Signal</span>
+                <span class="badge badge-slate">scikit-learn</span>
+                <span class="badge badge-slate">NumPy</span>
+                <span class="badge badge-slate">PyTorch</span>
+              </div>
+              <div style="color: var(--color-text-muted);">
+                Related Publication: <a href="https://doi.org/10.1109/ACCESS.2025.3577066" target="_blank" rel="noopener noreferrer">IEEE Access (2025)</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card-full planned" id="automat-lab">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+              <div>
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                  <span class="badge badge-blue">
+                    <span class="status-dot planned" aria-hidden="true"></span> Planned Research
+                  </span>
+                  <span class="badge badge-amber">Bayesian Optimisation</span>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 2px;">AutoMat Lab</h3>
+                <p style="font-family: var(--font-serif); font-style: italic; color: #b45309; font-size: 1rem;">
+                  AI-Assisted Experiment Recommendation &amp; Optimisation
+                </p>
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <span class="btn btn-secondary btn-sm" style="cursor: default;" title="Planned research architecture">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  Architecture Planned
+                </span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 16px;">
+              An active learning and Bayesian optimization platform designed to accelerate functional polymer nanocomposite discovery. Formulates sequential experimental recommendations to maximize capacitive sensitivity while keeping dielectric loss ($\tan \delta$) and elastic stiffness within specified operational constraints.
+            </p>
+
+            <div style="background: var(--color-canvas); padding: 16px; border-radius: var(--radius-sm); border-left: 3px solid #d97706; margin-bottom: 16px; font-size: 13px;">
+              <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Closed-Loop Active Learning:</strong>
+              Prior Formulation Matrix &rarr; Gaussian Process Surrogate Model &rarr; Expected Improvement (EI) Acquisition Function &rarr; Next Candidate Experiment Suggestion &rarr; Lab Validation &amp; Feedback.
+            </div>
+
+            <div class="grid-2" style="font-size: 13px; margin-bottom: 16px;">
+              <div>
+                <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Targeted Achievements:</strong>
+                <ul style="padding-left: 18px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Reduces compounding batch iterations by 60%+ compared to standard trial grid search.</li>
+                  <li>Maps multi-objective Pareto frontiers between mechanical elasticity and dielectric constant.</li>
+                </ul>
+              </div>
+              <div>
+                <strong style="color: var(--color-text-primary); display: block; margin-bottom: 4px;">Known Limitations:</strong>
+                <ul style="padding-left: 18px; color: var(--color-text-secondary); line-height: 1.6;">
+                  <li>Assumes tightly controlled humidity and dispersion energy across physical batches.</li>
+                  <li>Requires initial cold-start dataset before Gaussian process acquisition becomes robust.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; border-top: 1px solid var(--color-border-subtle); padding-top: 12px; font-size: 12px;">
+              <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                <span class="badge badge-slate">BoTorch</span>
+                <span class="badge badge-slate">GPyTorch</span>
+                <span class="badge badge-slate">Python</span>
+                <span class="badge badge-slate">Streamlit</span>
+              </div>
+              <div style="color: var(--color-text-muted);">
+                Related Publication: <a href="https://doi.org/10.1016/j.sintl.2025.100330" target="_blank" rel="noopener noreferrer">Sensors International (2025)</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Dr. Soly Mathew. Computational Materials Research &amp; AI.</span>
+      <span><a href="../" style="color: var(--color-text-inv-muted);">Portfolio Home</a> &bull; <a href="../research/" style="color: var(--color-text-inv-muted);">Research Projects</a> &bull; <a href="../publications/" style="color: var(--color-text-inv-muted);">Publications</a></span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
