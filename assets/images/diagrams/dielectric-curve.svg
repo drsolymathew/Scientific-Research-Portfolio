@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" aria-label="Experimental sensitivity curve comparing ternary dielectric nanocomposite to pure PDMS">
+  <defs>
+    <linearGradient id="areaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <rect width="100%" height="100%" fill="none" stroke="#e2e8f0" stroke-width="1.5" rx="12"/>
+
+  <!-- Chart Title -->
+  <text x="70" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#0f172a" letter-spacing="0.5">PRESSURE–CAPACITANCE TRANSDUCTION DYNAMICS</text>
+  <text x="70" y="65" font-family="'JetBrains Mono', monospace" font-size="11" fill="#0284c7">Relative Capacitance Change (ΔC / C₀) vs. Applied Pressure (P)</text>
+
+  <!-- Chart Area: Origin at (120, 360), Width 580, Height 260 -->
+  <!-- Grid Lines -->
+  <g stroke="#f1f5f9" stroke-width="1">
+    <!-- Horizontal -->
+    <line x1="120" y1="360" x2="700" y2="360"/>
+    <line x1="120" y1="300" x2="700" y2="300"/>
+    <line x1="120" y1="240" x2="700" y2="240"/>
+    <line x1="120" y1="180" x2="700" y2="180"/>
+    <line x1="120" y1="120" x2="700" y2="120"/>
+    <!-- Vertical -->
+    <line x1="120" y1="100" x2="120" y2="360"/>
+    <line x1="265" y1="100" x2="265" y2="360"/>
+    <line x1="410" y1="100" x2="410" y2="360"/>
+    <line x1="555" y1="100" x2="555" y2="360"/>
+    <line x1="700" y1="100" x2="700" y2="360"/>
+  </g>
+
+  <!-- Linear Working Range Highlight (0 - 1.5 kPa) -->
+  <rect x="120" y="100" width="290" height="260" fill="#f0f9ff" opacity="0.6"/>
+  <text x="265" y="115" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#0369a1" text-anchor="middle">Linear Region (0 – 1.5 kPa)</text>
+  <line x1="410" y1="100" x2="410" y2="360" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Axes -->
+  <line x1="120" y1="360" x2="710" y2="360" stroke="#475569" stroke-width="2"/>
+  <line x1="120" y1="90" x2="120" y2="360" stroke="#475569" stroke-width="2"/>
+
+  <!-- Axis Arrows -->
+  <polygon points="710,356 718,360 710,364" fill="#475569"/>
+  <polygon points="116,90 120,82 124,90" fill="#475569"/>
+
+  <!-- X-Axis Labels (Pressure in kPa) -->
+  <text x="120" y="380" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b" text-anchor="middle">0.0</text>
+  <text x="265" y="380" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b" text-anchor="middle">0.75</text>
+  <text x="410" y="380" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b" text-anchor="middle">1.5</text>
+  <text x="555" y="380" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b" text-anchor="middle">2.25</text>
+  <text x="700" y="380" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b" text-anchor="middle">3.0</text>
+  <text x="410" y="415" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#1e293b" text-anchor="middle">Applied Pressure P (kPa)</text>
+
+  <!-- Y-Axis Labels (ΔC / C₀) -->
+  <text x="105" y="364" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b" text-anchor="end">0.0</text>
+  <text x="105" y="304" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b" text-anchor="end">0.5</text>
+  <text x="105" y="244" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b" text-anchor="end">1.0</text>
+  <text x="105" y="184" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b" text-anchor="end">1.5</text>
+  <text x="105" y="124" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b" text-anchor="end">2.0</text>
+  
+  <text x="35" y="230" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#1e293b" text-anchor="middle" transform="rotate(-90 35 230)">Capacitance Response (ΔC / C₀)</text>
+
+  <!-- Curve 1: Pure PDMS (Low Sensitivity Baseline) -->
+  <!-- Path from (120,360) -> (265,340) -> (410,325) -> (555,315) -> (700,305) -->
+  <path d="M 120,360 Q 300,335 700,305" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="5,4"/>
+  <circle cx="265" cy="340" r="4" fill="#94a3b8"/>
+  <circle cx="410" cy="326" r="4" fill="#94a3b8"/>
+  <circle cx="555" cy="315" r="4" fill="#94a3b8"/>
+  <circle cx="700" cy="305" r="4" fill="#94a3b8"/>
+
+  <!-- Curve 2: Ternary Nanocomposite (PDMS + 0.5% TiO2 + 0.5% ZnO) -->
+  <!-- Steep linear rise: (120,360) -> (265,245) -> (410,150) -> then saturation curve -> (555,130) -> (700,122) -->
+  <path d="M 120,360 L 265,245 L 410,150 Q 520,132 700,122" fill="none" stroke="#0284c7" stroke-width="3.5"/>
+  <circle cx="265" cy="245" r="5" fill="#0284c7" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="410" cy="150" r="5" fill="#0284c7" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="555" cy="132" r="5" fill="#0284c7" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="700" cy="122" r="5" fill="#0284c7" stroke="#ffffff" stroke-width="1.5"/>
+
+  <!-- Sensitivity Slope Callout -->
+  <g transform="translate(230, 180)">
+    <rect x="0" y="0" width="165" height="42" rx="6" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" filter="url(#subtleShadow)"/>
+    <text x="12" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#0369a1">Enhanced Sensitivity (S)</text>
+    <text x="12" y="33" font-family="'JetBrains Mono', monospace" font-size="10" fill="#475569">S = δ(ΔC/C₀) / δP = 0.85 kPa⁻¹</text>
+  </g>
+
+  <!-- Legend in top right -->
+  <g transform="translate(480, 50)">
+    <rect x="0" y="0" width="220" height="60" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <!-- Line 1 -->
+    <line x1="15" y1="20" x2="45" y2="20" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="30" cy="20" r="4" fill="#0284c7"/>
+    <text x="55" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#0f172a">PDMS-TiO₂-ZnO Ternary</text>
+    <!-- Line 2 -->
+    <line x1="15" y1="42" x2="45" y2="42" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4,3"/>
+    <circle cx="30" cy="42" r="3.5" fill="#94a3b8"/>
+    <text x="55" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748b">Pristine PDMS Matrix</text>
+  </g>
+</svg>

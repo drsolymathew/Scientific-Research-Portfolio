@@ -1,0 +1,129 @@
+/* ==========================================================================
+   DESIGN TOKENS - SCANDINAVIAN SCIENTIFIC EDITORIAL DESIGN SYSTEM
+   Dr. Soly Mathew | Materials Scientist & Flexible Sensing Researcher
+   ========================================================================== */
+
+:root {
+  /* Color Palette - Midnight Navy (Hero & Dark Sections) */
+  --color-navy-950: #060b14;
+  --color-navy-900: #0b1424;
+  --color-navy-850: #101c32;
+  --color-navy-800: #162642;
+  --color-navy-700: #1f365d;
+  --color-navy-600: #2b497b;
+
+  /* Color Palette - Warm Scandinavian Off-White & Canvas */
+  --color-canvas: #fbfbfa;
+  --color-canvas-subtle: #f4f4f1;
+  --color-canvas-muted: #eaeae5;
+  --color-surface: #ffffff;
+  --color-surface-hover: #fafafa;
+  --color-surface-card: #ffffff;
+
+  /* Color Palette - Scientific Accents */
+  --color-accent-blue: #0284c7;
+  --color-accent-blue-hover: #0369a1;
+  --color-accent-blue-subtle: #f0f9ff;
+  --color-accent-blue-border: #bae6fd;
+
+  --color-accent-teal: #0d9488;
+  --color-accent-teal-hover: #0f766e;
+  --color-accent-teal-subtle: #f0fdfa;
+  --color-accent-teal-border: #99f6e4;
+
+  --color-accent-amber: #d97706;
+  --color-accent-amber-subtle: #fffbeb;
+
+  /* Text & Editorial Typography Colors */
+  --color-text-primary: #0f172a;      /* Slate 900 */
+  --color-text-secondary: #334155;    /* Slate 700 */
+  --color-text-muted: #64748b;        /* Slate 500 */
+  --color-text-light: #94a3b8;        /* Slate 400 */
+
+  /* Inverted Text (for Dark Navy Hero & Sections) */
+  --color-text-inv-primary: #f8fafc;
+  --color-text-inv-secondary: #cbd5e1;
+  --color-text-inv-muted: #94a3b8;
+
+  /* Borders & Dividers */
+  --color-border-subtle: #e2e8f0;
+  --color-border-medium: #cbd5e1;
+  --color-border-dark: #1e293b;
+  --color-border-inv-subtle: rgba(255, 255, 255, 0.12);
+
+  /* Typography Scales */
+  --font-serif: "Newsreader", "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Type Scale */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+  --text-5xl: 3rem;       /* 48px */
+  --text-6xl: 3.75rem;    /* 60px */
+
+  /* Line Heights */
+  --leading-tight: 1.15;
+  --leading-snug: 1.35;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+  --leading-loose: 1.8;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+
+  /* Layout Containers */
+  --container-max: 1240px;
+  --container-prose: 720px;
+  --container-wide: 1360px;
+  --gutter: 1.5rem;
+
+  /* Border Radii */
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Subtle Diffuse Shadows */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 12px -2px rgba(15, 23, 42, 0.06), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 28px -6px rgba(15, 23, 42, 0.08), 0 4px 8px -2px rgba(15, 23, 42, 0.03);
+  --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02);
+  --shadow-card-hover: 0 10px 25px -4px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.03);
+
+  /* Transitions & Animation */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Focus Ring */
+  --focus-ring: 0 0 0 3px rgba(2, 132, 199, 0.45);
+  --focus-ring-offset: 2px;
+
+  /* Z-Index Hierarchy */
+  --z-base: 1;
+  --z-sticky: 100;
+  --z-backdrop: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+}

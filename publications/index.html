@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications Archive | Dr. Soly Mathew</title>
+  <meta name="description" content="Verified peer-reviewed scientific publications authored by Dr. Soly Mathew in materials science and flexible sensors.">
+  <link rel="canonical" href="../publications/">
+
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="../" class="site-brand" aria-label="Dr. Soly Mathew Portfolio Home">
+        <span class="brand-monogram" aria-hidden="true">SM</span>
+        <div class="brand-text">
+          <span class="brand-name">Dr. Soly Mathew</span>
+          <span class="brand-title">Materials Science &amp; Sensors</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open Navigation Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="primary-nav" aria-label="Primary Navigation">
+        <ul class="nav-list" role="list">
+          <li><a href="../" class="nav-link">Home</a></li>
+          <li><a href="../#about" class="nav-link">About</a></li>
+          <li><a href="../#expertise" class="nav-link">Expertise</a></li>
+          <li><a href="../research/" class="nav-link">Research Projects</a></li>
+          <li><a href="./" class="nav-link active">Publications</a></li>
+          <li><a href="../#skills" class="nav-link">Skills</a></li>
+          <li><a href="../cv/" class="nav-link">Academic CV</a></li>
+        </ul>
+        <div class="header-actions">
+          <a href="../#contact" class="btn btn-primary btn-sm">Contact &amp; Connect</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <div class="case-study-hero">
+      <div class="container">
+        <div class="case-study-breadcrumb">
+          <a href="../">&larr; Back to Portfolio Home</a>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 12px; flex-wrap: wrap;">
+          <span class="badge badge-blue">Verified Academic Record</span>
+          <span class="badge badge-inv">ORCID: 0009-0001-2480-4682</span>
+        </div>
+        <h1 class="case-study-title">Peer-Reviewed Scientific Publications</h1>
+        <p class="case-study-lead">
+          Complete, verified bibliography of first-author journal articles covering flexible capacitive pressure sensors, ternary polymer nanocomposites, and wearable electronic devices.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        
+        <!-- Filter & Search Toolbar -->
+        <div class="filter-toolbar" role="region" aria-label="Publication search and filtering">
+          <div class="search-input-wrap">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="pub-search-input" class="search-input" placeholder="Search by paper title, journal name, topics, or DOI..." aria-label="Search publications">
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+            <div class="filter-pills-row" id="year-filters" role="group" aria-label="Filter by Publication Year">
+              <span class="filter-label">Year:</span>
+              <button class="filter-pill active" data-year="all">All Years</button>
+              <button class="filter-pill" data-year="2026">2026 (2)</button>
+              <button class="filter-pill" data-year="2025">2025 (3)</button>
+            </div>
+
+            <div class="filter-pills-row" id="topic-filters" role="group" aria-label="Filter by Topic">
+              <span class="filter-label">Topic:</span>
+              <button class="filter-pill active" data-topic="all">All Topics</button>
+              <button class="filter-pill" data-topic="PDMS Composites">PDMS Composites</button>
+              <button class="filter-pill" data-topic="Wearable Sensors">Wearable Sensors</button>
+              <button class="filter-pill" data-topic="Ternary Dielectrics">Ternary Dielectrics</button>
+              <button class="filter-pill" data-topic="Graphene Oxide">Graphene Oxide</button>
+              <button class="filter-pill" data-topic="Rare-Earth Oxides">Rare-Earth Oxides</button>
+            </div>
+          </div>
+
+          <div id="publication-count" style="font-family: var(--font-mono); font-size: 12px; color: var(--color-text-muted);">
+            Displaying 5 of 5 verified publications
+          </div>
+        </div>
+
+        <!-- Dynamic List -->
+        <div id="publications-list" style="display: flex; flex-direction: column; gap: 20px;" aria-live="polite">
+          <!-- Populated by js/publications.js -->
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Dr. Soly Mathew. Verified Academic Bibliography.</span>
+      <span><a href="../" style="color: var(--color-text-inv-muted);">Home</a> &bull; <a href="../cv/" style="color: var(--color-text-inv-muted);">Academic CV</a></span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/publications.js"></script>
+</body>
+</html>
