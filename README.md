@@ -6,16 +6,18 @@ Designed with a contemporary Scandinavian scientific editorial aesthetic, Apple-
 
 ---
 
-## 🔬 Scientific Profile & Verified Research
+## 🔬 Scientific Profile & Verified Credentials
 
 - **Researcher:** Dr. Soly Mathew
-- **Specialisation:** Flexible Capacitive Pressure Sensors &bull; Polymer Nanocomposites &bull; Wearable Electronics &bull; Scientific Computing
-- **Current Position:** Scientific Officer, Department of Art Conservation, Indian Institute of Heritage, Delhi (Jul 2026 &ndash; Present)
-- **Academic Background:**
-  - Project Associate, Indian Institute of Technology Jodhpur (IIT Jodhpur) (Oct 2025 &ndash; Jun 2026)
-  - Assistant Professor (Adhoc), NSS College of Engineering, Palakkad (Aug 2025 &ndash; Oct 2025)
-  - PhD in Materials Science, Department of Physics, School of Advanced Sciences, Vellore Institute of Technology (VIT), India
-- **Doctoral Supervisor:** Dr. Krishnamoorthi Chintagumpala
+- **Specialisation:** Flexible Capacitive Pressure Sensors &bull; Polymer Nanocomposites &bull; Wearable Electronics &bull; Materials Science ML
+- **Work Experience & Professional Appointments:**
+  - **Scientific Officer:** Department of Art Conservation, Indian Institute of Heritage, Delhi (Jul 2026 &ndash; Present) &bull; Materials science examination, degradation characterisation, and analytical conservation research.
+  - **Project Associate:** Indian Institute of Technology Jodhpur (IIT Jodhpur) (Oct 2025 &ndash; Jun 2026) &bull; Advanced functional nanocomposites, sensor design, and electromechanical evaluation.
+  - **Assistant Professor (Adhoc):** NSS College of Engineering, Palakkad (Aug 2025 &ndash; Oct 2025) &bull; Engineering physics curriculum delivery, laboratory supervision, and undergraduate mentoring.
+- **Education:**
+  - **Doctor of Philosophy (PhD) in Materials Science:** Department of Physics, School of Advanced Sciences, Vellore Institute of Technology (VIT), India (2020 &ndash; Present)
+  - **Doctoral Supervisor:** Dr. Krishnamoorthi Chintagumpala
+  - **Doctoral Research Focus:** Design, microfabrication, and electromechanical evaluation of ternary polymer nanocomposite capacitive pressure sensors.
 - **Verified ORCID:** [0009-0001-2480-4682](https://orcid.org/0009-0001-2480-4682)
 - **Target Audience:** Danish and international research institutions, industrial R&D teams, hiring managers, professors, and scientific collaborators.
 
@@ -45,16 +47,17 @@ Designed with a contemporary Scandinavian scientific editorial aesthetic, Apple-
 
 ---
 
-## 💻 Digital Research & AI-Assisted Scientific Computing
+## 💻 Digital Research, Materials Science ML & Scientific Computing
 
 The portfolio highlights practical digital skills and computational tools applied directly to materials science research workflows:
 
-- **Scientific Python Development:** Automated data pipelines for LCR meter logs, sensitivity curve fitting ($S = \delta(\Delta C/C_0)/\delta P$), hysteresis calculation, and response kinetics analysis (`NumPy`, `Pandas`, `SciPy`, `Matplotlib`, `pytest`).
+- **Materials Science Machine Learning (Materials Informatics):** Predictive modeling using `scikit-learn` (Random Forest, SVR, Gradient Boosting) for sensor sensitivity prediction ($S = \delta(\Delta C/C_0)/\delta P$), feature engineering from experimental dielectric curves, and surrogate modeling of ternary nanocomposite loading spaces.
+- **Scientific Python Development:** Automated data pipelines for LCR meter logs, sensitivity curve fitting, hysteresis calculation, and response kinetics analysis (`NumPy`, `Pandas`, `SciPy`, `Matplotlib`, `pytest`).
 - **AI-Assisted Research Workflows:** Practical prompt engineering with AI coding assistants (Claude Code, GitHub Copilot, Google Antigravity), custom domain instruction files (`SKILL.md` / `CLAUDE.md`), and automated test generation under strict human scientific review.
 - **Evidence-Verified Literature Synthesis:** Literature exploration using existing MCP integrations (arXiv, PubMed, DOI cross-reference) with mandatory human source verification to eliminate scientific hallucinations.
 
 ### Practical Research Projects
-1. **SensorLab Analytics:** Reproducible Python data-analysis pipeline for flexible capacitive pressure sensors.
+1. **SensorLab Analytics:** Reproducible Python & ML data-analysis pipeline for flexible capacitive pressure sensors, with Scikit-learn sensitivity prediction.
 2. **AI-Assisted Sensor Research:** AI-assisted scientific scripting and testing workflow with domain rules and human review.
 3. **Scientific Literature & Research Workflow:** Evidence-backed literature review and citation verification methodology.
 
